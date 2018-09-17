@@ -26,13 +26,13 @@ public class GuiList extends JPanel {
 		JScrollPane pane = new JScrollPane(list);
 
 		DefaultListSelectionModel m = new DefaultListSelectionModel();
-		m.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+		m.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
 		m.setLeadAnchorNotificationEnabled(false);
 		list.setSelectionModel(m);
 
 		list.addListSelectionListener(new ListSelectionListener() {
 			public void valueChanged(ListSelectionEvent e) {
-				System.out.println("[Values changed]");
+				//System.out.println("[Values changed]");
 			}
 		});
 
