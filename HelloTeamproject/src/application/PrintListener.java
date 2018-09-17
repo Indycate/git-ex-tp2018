@@ -13,7 +13,7 @@ class PrintListener implements ActionListener {
 
 	public void actionPerformed(ActionEvent e) {
 		int selected[] = list.getList().getSelectedIndices();
-		System.out.println("Selected Elements:  ");
+		//System.out.println("Selected Elements:  ");
 
 		for (int i = 0; i < selected.length; i++) {
 			String element = (String) list.getList().getModel().getElementAt(selected[i]);
